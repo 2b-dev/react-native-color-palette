@@ -52,7 +52,7 @@ export default class ColorPalette extends Component {
     const { title, paletteStyles, colors } = this.props;
     return (
       <View style={styles.container}>
-        <Text>{title}</Text>
+        <Text style={{fontSize: 16}}>{title}</Text>
         <View style={[styles.colorContainer, {...paletteStyles}]}>
           {colors.map((c) => this.renderColorOption(c))}
         </View>
